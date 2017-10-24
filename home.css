@@ -1,20 +1,27 @@
 html, body {
     height: 100%;
     width: 100%;
-
-    display: flex;
-    flex-direction: row;
 }
 
 #tabs {
-    border-style: solid;
-    margin: 8px;
-
-    display: flex;
-    flex-direction: column;
+    display: block;
 }
 
-#tabs > div {
+#tabs > input {
+    display: none;
+}
+#tabs > label {
+    position: relative;
+    cursor: pointer;
+    display: block;
+    position: relative;
+}
+
+#tabs .tab_button:checked + label {
+    border-color: blue;
+}
+
+#tabs > label {
     border-style: solid;
     margin: 4px;
     padding: 4px;
@@ -25,6 +32,8 @@ html, body {
 
 #content {
     border-style: solid;
+    position: absolute;
     margin: 8px;
-    flex-grow: 1;
+    width: 600px;
+    background-color: grey;
 }
