@@ -1,33 +1,45 @@
-html, body {
-    height: 100%;
-    width: 100%;
-}
-
 #tabs {
     display: block;
+    list-style: none;
+    margin: auto;
+    max-width: 800pt;
+    position: relative;
+    background-color: grey;
 }
 
-#tabs > input {
+#tabs input {
     display: none;
 }
-#tabs > label {
+#tabs label {
     position: relative;
     cursor: pointer;
+    width: 120pt;
     display: block;
     position: relative;
+    border-style: solid;
+    margin: 4px;
+    padding-top: 5pt;
+    padding-bottom: 5pt;
+    text-align: center;
+    float: top;
+}
+
+#tabs .content {
+    display: none;
+    position: absolute;
+    top: 5pt;
+    left: 150pt;
+    right: 30pt;
+    bottom: 5pt;
+    border-style: solid;
+}
+
+#tabs input:checked ~ [class="content"] {
+    display: block;
 }
 
 #tabs .tab_button:checked + label {
     border-color: blue;
-}
-
-#tabs > label {
-    border-style: solid;
-    margin: 4px;
-    padding: 4px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    text-align: center
 }
 
 #content {
