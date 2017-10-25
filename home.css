@@ -27,6 +27,10 @@ body {
     padding-bottom: 5pt;
 }
 
+#tabs #cont_button + label {
+    top: 10pt;
+}
+
 #tabs #mns_button + label {
     top: 10pt;
 }
@@ -41,6 +45,10 @@ body {
 
 #tabs #edu_button + label {
     top: 130pt;
+}
+
+#tabs #sup_button + label {
+    top: 10pt;
 }
 
 #tabs .content {
