@@ -33,23 +33,23 @@ body {
 }
 
 #tabs #cont_button + label {
-    top: 10pt;
-}
-
-#tabs #mns_button + label {
     top: 50pt;
 }
 
-#tabs #wmn_button + label {
+#tabs #mns_button + label {
     top: 90pt;
 }
 
-#tabs #edu_button + label {
+#tabs #wmn_button + label {
     top: 130pt;
 }
 
-#tabs #sup_button + label {
+#tabs #edu_button + label {
     top: 170pt;
+}
+
+#tabs #sup_button + label {
+    top: 210pt;
 }
 
 #tabs .content {
