@@ -35,10 +35,6 @@ body {
     top: 10pt;
 }
 
-#tabs #tsc_button + label {
-    top: 50pt;
-}
-
 #tabs #wmn_button + label {
     top: 90pt;
 }
