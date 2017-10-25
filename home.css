@@ -67,11 +67,25 @@ body {
     justify-content: flex-end;
 }
 
-.content .flavor {
+.content div h3 {
+    background-color: #FFFFFFDD;
+    margin: 0;
+    height: 3em;
+    padding: 0.5em;
+    text-align: center;
+}
+
+.content div .flavor {
     background-color: #666666DD;
     color: white;
     overflow: hidden;
-    transition: flex-basis 0.5s;
+    max-height: 0%;
+
+    transition: max-height 1s;
+}
+
+.content div:hover .flavor {
+    max-height: 100%;
 }
 
 .content .flavor p {
