@@ -28,6 +28,10 @@ body {
     padding-bottom: 5pt;
 }
 
+#tabs #home_button + label {
+    top: 10pt;
+}
+
 #tabs #cont_button + label {
     top: 10pt;
 }
