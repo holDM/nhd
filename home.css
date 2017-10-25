@@ -1,5 +1,6 @@
 body {
     font-family: sans-serif;
+    background-color: #463B31;
 }
 #tabs {
     display: flex;
@@ -55,6 +56,10 @@ body {
     flex-grow: 1;
     margin-left: 150pt;
     background-color: green;
+}
+
+#tabs .content > * {
+    flex: 1;
 }
 
 #tabs .tab_button:checked + label {
