@@ -106,6 +106,10 @@ body {
     margin: 0;
 }
 
+.centered {
+    text-align: center;
+}
+
 #mns #mns_inception {
     background-image: url("https://www-tc.pbs.org/americanprophet/images/joseph-smith.jpg");
     background-position: center center;
