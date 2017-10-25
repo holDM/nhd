@@ -1,8 +1,12 @@
+body {
+    font-family: sans-serif;
+}
 #tabs {
-    display: block;
+    display: flex;
     list-style: none;
     margin: auto;
     max-width: 800pt;
+    min-height: 400pt;
     position: relative;
     background-color: grey;
 }
@@ -11,41 +15,81 @@
     display: none;
 }
 #tabs label {
-    position: relative;
+    position: absolute;
     cursor: pointer;
     width: 120pt;
     display: block;
-    position: relative;
     border-style: solid;
-    margin: 4px;
-    padding-top: 5pt;
-    padding-bottom: 5pt;
+    left: 5pt;
     text-align: center;
     float: top;
+    padding-top: 5pt;
+    padding-bottom: 5pt;
+}
+
+#tabs #mns_button + label {
+    top: 10pt;
+}
+
+#tabs #tsc_button + label {
+    top: 50pt;
+}
+
+#tabs #wmn_button + label {
+    top: 90pt;
+}
+
+#tabs #edu_button + label {
+    top: 130pt;
 }
 
 #tabs .content {
     display: none;
-    position: absolute;
-    top: 5pt;
-    left: 150pt;
-    right: 30pt;
-    bottom: 5pt;
-    border-style: solid;
 }
 
 #tabs input:checked ~ [class="content"] {
-    display: block;
+    display: flex;
+    flex-direction: row;
+
+    height: 100%;
+    flex-grow: 1;
+    margin-left: 150pt;
+    background-color: green;
 }
 
 #tabs .tab_button:checked + label {
     border-color: blue;
 }
 
-#content {
-    border-style: solid;
-    position: absolute;
-    margin: 8px;
-    width: 600px;
-    background-color: grey;
+.content div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.content .flavor {
+    background-color: #666666DD;
+    color: white;
+    overflow: hidden;
+    transition: flex-basis 0.5s;
+}
+
+.content .flavor p {
+    padding: 0.5em;
+    margin: 0;
+}
+
+#mns #mns_inception {
+    background-image: url("https://www-tc.pbs.org/americanprophet/images/joseph-smith.jpg");
+    background-position: center center;
+}
+
+#mns #mns_utah {
+    background-image: url("assets/salt_lake_desert.jpg"); /*https://commons.wikimedia.org/wiki/File:Crossing_the_Great_Salt_Lake_Desert_From_Simpson%27s_Spring_to_Short_Cut_Pass,_Granite_Mountain_in_the_distance._-_NARA_-_305637.jpg*/
+    background-position: bottom center;
+}
+
+#edu #edu_mann {
+    background-image: url("assets/mann.jpg");
+    background-position: center center;
 }
